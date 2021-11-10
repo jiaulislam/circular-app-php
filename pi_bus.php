@@ -31,73 +31,67 @@ if ($oth_cou = 1) {
     ?>
 
 
-    <form method="get">
+    <form method="get">.
 
-        <table width="369">
-            <tr>
-                <td width="216">
-
-                    <div class="row" style="height: 40px;">
-                        <div>
-                            <div class="form-group">
-                                <select type="text" name="fmon" class="form-control" style="width:102px;">
-                                    <?php for ($month = 1; $month <= 12; $month++) {
-                                        $asd = ('2013-' . (strlen($month) == 1 ? '0' . $month : $month) . '-15');
-                                        ?>
-                                        <option value="<?php echo strlen($month) == 1 ? '0' . $month : $month; ?>"><?php echo date_format(date_create(".$asd."), "F"); ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="form-group">
-                                <select type="text" name="fyear" class="form-control" style="width:81px;">
-                                    <?php for ($year = date('Y'); $year > date('Y') - 2; $year--) { ?>
-                                        <option value="<?php echo $year; ?>"><?php echo $year; ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <select type="text" name="fmon" class="form-control">
+                            <?php for ($month = 1; $month <= 12; $month++) {
+                                $asd = ('2013-' . (strlen($month) == 1 ? '0' . $month : $month) . '-15');
+                                ?>
+                                <option value="<?php echo strlen($month) == 1 ? '0' . $month : $month; ?>"><?php echo date_format(date_create(".$asd."), "F"); ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
-
-                    <div class="row" style="height: 40px;">
-                        <div>
-                            <div class="form-group">
-                                <select type="text" name="tomon" class="form-control" style="width:102px;">
-
-                                    <?php for ($month = 1; $month <= 12; $month++) {
-                                        $asd = ('2013-' . (strlen($month) == 1 ? '0' . $month : $month) . '-15');
-                                        ?>
-                                        <option value="<?php echo strlen($month) == 1 ? '0' . $month : $month; ?>"><?php echo date_format(date_create(".$asd."), "F"); ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="form-group">
-                                <select type="text" name="toyear" class="form-control" style="width:81px;">
-
-                                    <?php for ($year = date('Y'); $year > date('Y') - 2; $year--) { ?>
-                                        <option value="<?php echo $year; ?>"><?php echo $year; ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <select type="text" name="fyear" class="form-control">
+                            <?php for ($year = date('Y'); $year > date('Y') - 2; $year--) { ?>
+                                <option value="<?php echo $year; ?>"><?php echo $year; ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
-                </td>
-                <td width="66">
-                    <button type="submit" class="btn btn-success btn-lg btn-block" style=" height:80px;">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <select type="text" name="tomon" class="form-control">
 
-                </td>
-                <td width="71">
-                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='home.php'"
-                            style=" height:80px;">Home
-                    </button>
+                            <?php for ($month = 1; $month <= 12; $month++) {
+                                $asd = ('2013-' . (strlen($month) == 1 ? '0' . $month : $month) . '-15');
+                                ?>
+                                <option value="<?php echo strlen($month) == 1 ? '0' . $month : $month; ?>"><?php echo date_format(date_create(".$asd."), "F"); ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <select type="text" name="toyear" class="form-control">
 
-                </td>
-            </tr>
-        </table>
+                            <?php for ($year = date('Y'); $year > date('Y') - 2; $year--) { ?>
+                                <option value="<?php echo $year; ?>"><?php echo $year; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="btn btn-success btn-block">Submit</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-block" onclick="location.href='home.php'"
+                    >Home
+                </div>
+            </div>
         </div>
+
+
     </form>
 
     <?php

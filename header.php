@@ -80,18 +80,19 @@ while ($row = oci_fetch_array($stid)) {
 </head>
 
 <body style="padding-top: 6px;">
-<div class="container">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-sm-6" style="padding:0px 0px 10px 0px;">
-                <button type="button" class="btn btn-all btn-lg btn-block"><?php echo "Welcome  " . $user_name; ?></button>
-
-            </div>
-            <div class="col-sm-6" style="padding:0px 0px 10px 0px;">
-                <button type="button" class="btn btn-danger btn-lg btn-block" onClick="location.href='logout.php?logout'">
-                    Log Out
-                </button>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col py-2">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="text-center"><?php echo "Welcome,  <em><b>" . $user_name ."</b></em>" ;?></h6>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-danger btn-block"
+                            onClick="location.href='logout.php?logout'">
+                        Log Out
+                    </button>
+                </div>
             </div>
         </div>
     </div>

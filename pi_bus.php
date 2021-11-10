@@ -141,7 +141,7 @@ ORDER BY DECODE(PRJ_CODE,'IPL-POLASH',1,'IPL-BOKUL',2,'TAKAFUL-EKHLAS',3,'PRAGAT
                 while ($row4 = oci_fetch_array($collection_info_stid)) {
                     ?>
                     <tr>
-                        <td style="width:10 px;"><?php echo $row4[0]; ?></td>
+                        <td style="width: 10px;"><?php echo $row4[0]; ?></td>
                         <td align="right"><?php echo $row4[1]; ?></td>
                         <td align="right"><?php echo round($row4[2]); ?></td>
                         <td align="right"><?php echo round($row4[3]); ?></td>

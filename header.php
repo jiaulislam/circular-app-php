@@ -90,7 +90,7 @@ while ($row = oci_fetch_array($stid)) {
                 <div class="card-footer">
                     <button type="button" class="btn btn-danger btn-block"
                             onClick="location.href='logout.php?logout'">
-                        Log Out
+                        SIGN OUT
                     </button>
                 </div>
             </div>

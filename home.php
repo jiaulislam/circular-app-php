@@ -36,5 +36,3 @@ if ($oth_cou != "DEVHR") {
 </button>
 
 
-</div>
-

@@ -32,7 +32,6 @@ if ($oth_cou = 1) {
 
 
     <form method="get">.
-
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -90,8 +89,6 @@ if ($oth_cou = 1) {
                 </div>
             </div>
         </div>
-
-
     </form>
 
     <?php

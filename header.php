@@ -84,8 +84,8 @@ while ($row = oci_fetch_array($stid)) {
     <div class="row justify-content-center">
         <div class="col py-2">
             <div class="card">
-                <div class="card-header">
-                    <h6 class="text-center"><?php echo "Welcome,  <em><b>" . $user_name ."</b></em>" ;?></h6>
+                <div class="card-header bg-primary">
+                    <h6 class="text-center text-white"><?php echo "Welcome,  <em><b>" . $user_name . "</b></em>"; ?></h6>
                 </div>
                 <div class="card-footer">
                     <button type="button" class="btn btn-danger btn-block"

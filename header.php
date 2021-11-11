@@ -65,6 +65,8 @@ while ($row = oci_fetch_array($stid)) {
             color: #FFFFFF;
         }
     </style>
+    <!--    <script src="js/bootstraps.min.js"></script>-->
+    <!--    <link href="css/bootstraps.min.css" rel="stylesheet">-->
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>

@@ -66,7 +66,7 @@ if ($oth_cou = 1) {
                 <!--                Third Row Input Text Input -->
                 <div class="col">
                     <div class="form-group">
-                        <input type="text" name="c_num" placeholder="Code Number" class="form-control">
+                        <input type="text" name="c_num" placeholder="Code Number" class="form-control" required>
                     </div>
                 </div>
             </div>

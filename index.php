@@ -83,7 +83,7 @@ from dual";
 <div class="container justify-content-center align-content-center">
     <div class="container align-content-center">
         <div class="row">
-            <img src="bus.png" class="img-fluid mx-auto w-auto">
+            <img src="icons/logo.jpg" class="img-fluid mx-auto w-auto">
         </div>
     </div>
     <p>&nbsp;</p>

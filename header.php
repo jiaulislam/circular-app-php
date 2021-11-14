@@ -1,17 +1,19 @@
 <?php
 session_start();
 include_once 'db/db_connect_oracle.php';
-if (!isset($_SESSION['user'])) {
-    header("Location: index.php");
+if ( ! isset($_SESSION['user']))
+{
+	header("Location: index.php");
 }
 $user_c = $_SESSION['user'];
 $query = "select * from plil.syusrmas where USERCODE='$user_c'";
 $stid = OCIParse($conn, $query);
 OCIExecute($stid);
-while ($row = oci_fetch_array($stid)) {
-    $user_co = $row[0];
-    $user_name = $row[1];
-    $pro_co = $row[29];
+while ($row = oci_fetch_array($stid))
+{
+	$user_co = $row[0];
+	$user_name = $row[1];
+	$pro_co = $row[29];
 }
 
 ?>

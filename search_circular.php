@@ -81,7 +81,7 @@ $verified_user_for_create_circular = ['000339', 'SYSTEM'];
         echo '
         <section class="create-circular container">
             <div class="create-circular-container d-flex flex-row-reverse">
-                <a href="new_circular.php" class= "btn btn-primary px-3 py-1 mw-100 my-2">+ NEW CIRCULAR</a>
+                <a href="new_circular.php" class= "btn btn-primary px-3 py-1 mw-100 my-2">+ UPLOAD</a>
             </div>
         </section>        
         ';

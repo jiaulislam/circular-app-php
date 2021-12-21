@@ -3,3 +3,6 @@
 /policy_info_mob/*
 /policy_info_mob/
 /js/
+assets/
+.idea/
+.js/

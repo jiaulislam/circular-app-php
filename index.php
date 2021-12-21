@@ -5,7 +5,7 @@ if (isset($_POST['btn-login']))
 {
 //	$user = $_POST['email'];
 //	$pass = $_POST['pass'];
-
+	print_r($_POST);
 	$user = $_POST['email'];
 	$pass = $_POST['pass'];
 	$query = "select
@@ -80,17 +80,6 @@ from dual";
 <head>
     <script src="js/bootstraps.min.js"></script>
     <link href="css/bootstraps.min.css" rel="stylesheet">
-    <!--    <script src="js/jquery.min.js"></script>-->
-    <!--    <link href="css/bootstrap.css" rel="stylesheet">-->
-    <!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <!--    <link href="css/bootstrap-grid.css" rel="stylesheet">-->
-    <!--    <link href="css/bootstrap-grid.min.css" rel="stylesheet">-->
-    <!--    <link href="css/bootstrap-reboot.css" rel="stylesheet">-->
-    <!--    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">-->
-    <!--    <script type="text/javascript" src="js/jquery-latest.js"></script>-->
-    <!--    <script type="text/javascript" src="js/__jquery.js"></script>-->
-    <!--    <script type="text/javascript" src="js/jquery.js"></script>-->
-    <!--	-->
 </head>
 <body>
 <div class="container justify-content-center align-content-center">
@@ -111,7 +100,7 @@ from dual";
                                     <img src="icons/face_black_24dp.svg">
                                 </span>
                                 <input type="text" placeholder="User Code" class="form-control"
-                                       aria-labelledby="usercode" aria-label="User Code" required/>
+                                       aria-labelledby="usercode" aria-label="User Code" name="email" required/>
 
                             </div>
                             <div class="input-group">

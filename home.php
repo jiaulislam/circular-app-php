@@ -35,4 +35,7 @@ if ($oth_cou != "DEVHR") {
 <button type="button" class="btn btn-warning btn-lg btn-block" onClick="location.href='pol_info_pd.php'">Policy Ledger
 </button>
 
+<button type="button" class="btn btn-primary btn-lg btn-block" onClick="location.href='search_circular.php'">Circular Notice
+</button>
+
 
